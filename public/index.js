@@ -2,7 +2,6 @@ const socket = io();
 
 let input = document.getElementById("mensaje");
 let user = document.getElementById("user");
-
 input.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     if (e.target.value) {
@@ -10,12 +9,9 @@ input.addEventListener("keyup", (e) => {
     }
   }
 });
-
-//con on expone data
 socket.on("welcome", (data) => {
   alert(data);
 });
-
 socket.on("messagelog", (data) => {
   let p = document.getElementById("log");
   let mensajes = data

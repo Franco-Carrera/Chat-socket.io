@@ -10,19 +10,16 @@
 </head>
 
 <body>
-
-  <h1>Welcome to UwuChat jo jo</h1>
-
-  <p>Nombre</p>
-  <input id="user"></input>
-  <p>Mensaje</p>
-  <input id="mensaje"></input>
-
-
-  <div id="container">
-    <p id="log"></p>
+  <h1>Bienvenido al chat socket </h1>
+  <div class="container__chat">
+    <p>Nombre User</p>
+    <input type="text" id="user">
+    <p>Mensaje</p>
+    <input type="text" id="mensaje"></input>
+    <div id="container">
+      <p id="log"></p>
+    </div>
   </div>
-
   <script src="/socket.io/socket.io.js"></script>
   <script src="index.js"></script>
 </body>
